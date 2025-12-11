@@ -1,0 +1,1535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.mobil {
+    display: none;
+}
+
+@media(max-width:768px) {
+
+    .mobil {
+        display: block;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        background-color: #290150;
+        display: flex;
+        flex-direction: column;
+        background-image: url('daire.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .main-top {
+        height: 65vh;
+        display: flex;
+    }
+
+    .main-bottom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 35vh;
+        gap: 20px;
+        padding: 10px 20px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .main-bottom h1,
+    p {
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .main-bottom .button {
+        background: white;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        padding: 17px 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .main-bottom a .button {
+        color: black;
+    }
+
+    /* APP 2*/
+
+    .main2 {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+
+    .main2-top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .main2-top h1 {
+        color: white;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .main2-top .input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main2-top .input p {
+        font-size: 0.7rem;
+    }
+
+    .main2-top .input input {
+        width: 100%;
+        height: 50px;
+        border-radius: 17px;
+        background: transparent;
+        border: 1px solid white;
+        padding: 5px 15px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+
+    .pf {
+        font-size: 0.8rem;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .main2 .main2-top .top-a {
+        background: white;
+        color: black;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        font-family: monospace;
+        font-weight: 600;
+    }
+
+    .main2-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .main2-bottom .link-a {
+        width: 100%;
+        height: 55px;
+        border-radius: 15px;
+        background: rgb(55, 54, 54);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-a .link {
+        color: white;
+        font-family: monospace;
+        font-size: 1rem;
+    }
+
+    .or-line {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .or-line::before {
+        content: "";
+        width: 45%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+
+    .or-line::after {
+        content: "";
+        width: 45%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+
+    /*APP 4*/
+
+    .main4 {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main4-top {
+        width: 100%;
+        padding: 20px 25px;
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0px 20px;
+        height: 70px;
+    }
+
+    .head h1 {
+        color: white;
+        font-family: monospace;
+        font-size: 1rem;
+    }
+
+    .head a img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .card-main {
+        width: 100%;
+        height: 195px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-main .card {
+        width: 45%;
+        background: rgb(55, 54, 54);
+        height: 100%;
+        border-radius: 7px;
+        padding: 11px 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-main .card .numbers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .numbers .total-balance {
+        color: white;
+        font-family: monospace;
+        font-weight: 600;
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-main .card .mastercard-logo {
+        width: 40px;
+        height: 100%;
+        display: flex;
+        align-items: end;
+    }
+
+    .card-main .card .mastercard-logo img {
+        width: 100%;
+        height: 25%;
+    }
+
+    .card-main .dordlu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        gap: 5px;
+        margin-top: -10px;
+    }
+
+    .card-main .dordlu div:nth-child(1) {
+        background: white;
+    }
+
+    .card-main .dordlu div {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgb(125, 125, 125);
+    }
+
+    .main4-top .crease {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .crease .income-expenses {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .crease .income-expenses .balance {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .crease .income-expenses .balance p {
+        font-size: 0.6rem;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .crease .income-expenses .balance a {
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .crease .income-expenses .icon {
+        background: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crease .income-expenses .icon i {
+        color: black;
+    }
+
+    .crease .income-expenses:nth-child(2) .icon i {
+        rotate: 40deg;
+    }
+
+    .main4-bottom {
+        background: whitesmoke;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 25px 15px 80px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+
+    .main4-bottom .main4-bottom-span {
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+
+    .main4-bottom .transactions-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        box-shadow: 0px 3px 0px -1px rgba(10, 0, 0, 0.1);
+    }
+
+    .main4-bottom .transactions-main .transactions-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .main4-bottom .transactions-main .date span {
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+
+    .main4-bottom .transactions-main .transactions-div i {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 18px;
+    }
+
+    .main4-bottom .transactions-main:nth-child(2) .transactions-div i {
+        background: #25d025;
+    }
+
+    .main4-bottom .transactions-main:nth-child(3) .transactions-div i {
+        background: rgb(249 114 19);
+    }
+
+    .main4-bottom .transactions-main:nth-child(4) .transactions-div i {
+        background: #25d025;
+    }
+
+    .main4-bottom .transactions-main:nth-child(5) .transactions-div i {
+        background: #226f85;
+    }
+
+    .main4-bottom .transactions-main .transactions-div .span-i span {
+        font-size: 1.2rem;
+    }
+
+    .main4-bottom .transactions-main .transactions-div .span-i {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .main4-bottom .transactions-main .transactions-div .transaction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main4-bottom .transactions-main .transactions-div span {
+        font-family: sans-serif;
+    }
+
+    .main4-bottom .transactions-main:nth-child(2) .transactions-div span {
+        color: red;
+    }
+
+    .main4-bottom .transactions-main:nth-child(3) .transactions-div span {
+        color: red;
+    }
+
+    .main4-bottom .transactions-main:nth-child(4) .transactions-div span {
+        color: rgb(59, 214, 28);
+    }
+
+    .main4-bottom .transactions-main:nth-child(5) .transactions-div span {
+        color: rgb(59, 214, 28);
+    }
+
+    .main4-bottom .transactions-main .transactions-div .transaction p {
+        color: gray;
+    }
+
+    .footer-1 {
+        width: 100%;
+        height: 8%;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background: white;
+        position: fixed;
+        bottom: 0;
+    }
+
+    /*APP 5*/
+
+    .main5 {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main5-top {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .head i {
+        color: white;
+    }
+
+    .profile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .profile h2 {
+        color: white;
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+
+    .profile p {
+        font-size: 0.7rem;
+    }
+
+    .profile-img {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-img img {
+        width: 100%;
+        height: 30vh;
+        border-radius: 50%;
+    }
+
+    .main5-bottom {
+        width: 100%;
+        padding: 10px 10px 80px 10px;
+
+    }
+
+    .main5-bottom .links {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .main5-bottom .links .link {
+        border-bottom: 1px solid white;
+        padding: 20px 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .main5-bottom .links .link:nth-child(4) {
+        border: none;
+    }
+
+    .main5-bottom .links .link .div-icon:nth-child(1) {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    .main5-bottom .links .link:nth-child(1) .div-icon:nth-child(1) {
+        background: tomato;
+    }
+
+    .main5-bottom .links .link:nth-child(2) .div-icon:nth-child(1) {
+        background: yellowgreen;
+    }
+
+    .main5-bottom .links .link:nth-child(3) .div-icon:nth-child(1) {
+        background: palevioletred;
+    }
+
+    .main5-bottom .links .link:nth-child(4) .div-icon:nth-child(1) {
+        background: khaki;
+    }
+
+    .main5-bottom .links .link span {
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .footer-1 a {
+        font-size: 1.2rem;
+    }
+
+    .footer-1 a .home {
+        border-bottom: 2px solid rgb(123, 123, 249);
+        font-size: 1.5rem;
+    }
+
+    .footer-1 a .cash {
+        border-bottom: 2px solid rgb(123, 123, 249);
+        font-size: 1.5rem;
+    }
+
+    .footer-1 a .settings {
+        border-bottom: 2px solid rgb(123, 123, 249);
+        font-size: 1.5rem;
+    }
+
+    /*APP 5 Notification*/
+
+    .main5-notification {
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main5-notification .notification .date {
+        color: white;
+    }
+
+    .main5-notification .notification {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 15px;
+    }
+
+    .main5-notification .notification .date {
+        font-family: sans-serif;
+    }
+
+    .main5-notification .notification .notification-mini {
+        display: flex;
+        padding: 25px 35px;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .main5-notification .notification .notification-mini img {
+        width: 50px;
+        height: 35px;
+    }
+
+    .main5-notification .notification .notification-mini .message-div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main5-notification .notification .notification-mini .message-div .spans {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main5-notification .notification .notification-mini .message-div .spans span {
+        color: #eb001b;
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+
+    /*APP 5 Account*/
+
+    .main5-account {
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .account-img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+
+    .main5-account .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+        gap: 10px;
+    }
+
+    .main5-account .inputs .name-input {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .main5-account .inputs .name-input input {
+        height: 40px;
+        width: 100%;
+        background: transparent;
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+    .main5-account .inputs .name-input input:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .main5-account .inputs .name-input span {
+        color: gray;
+        font-family: sans-serif;
+    }
+
+    .main5-account button {
+        width: 45%;
+        padding: 12px 13px;
+        margin: 0 auto;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 18px rgba(255, 255, 255, 0.25);
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .main5-account button:active {
+        transform: scale(0.97);
+    }
+
+
+
+    /* APP 6 */
+
+    .main6 {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .main6-top {
+        width: 100%;
+        padding: 0 25px 15px 25px;
+    }
+
+    .main6-top .head span {
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .main6-top .head i {
+        color: white;
+    }
+
+    .main6-top .card {
+        width: 60%;
+        background: rgb(55, 54, 54);
+        height: 70%;
+        padding: 17px 0;
+        border-radius: 16px;
+        margin: 0 auto;
+    }
+
+    .main6-top .card .gray-line {
+        width: 100%;
+        height: 24px;
+        background: gray;
+    }
+
+    .main6-top .card .password {
+        padding: 11px 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main6-top .card .password p:nth-child(2) {
+        font-size: 0.6em;
+    }
+
+    .main6-top .card .name {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .main6-top .card .name p {
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .main6-bottom {
+        padding: 5px 100px;
+    }
+
+    .main6-bottom form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main6-bottom form .input-div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main6-bottom form .input-div p {
+        font-size: 0.8rem;
+    }
+
+    .main6-bottom form .inputs {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .main6-bottom form .input-div input {
+        background: transparent;
+        border: 1px solid white;
+        height: 50px;
+        border-radius: 15px;
+        padding: 3px;
+    }
+
+    .main6-bottom .save-div {
+        margin: 30px 70px;
+        background: white;
+        color: black;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-family: sans-serif;
+    }
+
+    /* APP 7 */
+
+    .main7 {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main7 .main7-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+
+    .main7 .main7-top h1 {
+        color: white;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+    }
+
+    .main7 .main7-top .favorite {
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        gap: 15px;
+        background: #464646;
+        border-radius: 20px;
+        padding: 10px 10px;
+        box-shadow: inset 0 0 10px rgb(183 191 207 / 70%), 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .main7 .main7-top .favorite::-webkit-scrollbar {
+        display: none;
+    }
+
+    .main7 .main7-top .favorite .favorite-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .main7 .main7-top .favorite .favorite-div span {
+        color: white;
+        font-family: sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .main7 .main7-top .favorite .favorite-div div {
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(1) .favorite-div div {
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4YWBrqjzv2trV7q2-yVvdWppCCATuVb6yTg&s) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(2) .favorite-div div {
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ChZsCf6UQfEtqy6sbsvrrGD8POW8veXxmA&s) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(3) .favorite-div div {
+        background: url(https://www.azercell.com/theme/images/common/applogo512.png) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(4) .favorite-div div {
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNQcCAZ_DArpO0dY4kfaeVGSK7M5GkmcY9g&s) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(5) .favorite-div div {
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyfc_BygK4jSnqYjaHSRACAnXjbNOqyS6m_w&s) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(6) .favorite-div div {
+        background: url(https://media.licdn.com/dms/image/v2/C560BAQHRddvTRrLGFg/company-logo_200_200/company-logo_200_200/0/1631334150182?e=2147483647&v=beta&t=VNKz4UDJfM1j5n08fFOGzdUDcsCb1DlxSW5rSBd4h9w) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(7) .favorite-div div {
+        background: url(https://play-lh.googleusercontent.com/ppln7JPBNNz-XMb2d-ZOiqOq1yThT65Iy58s59rlm1SEyGvMW4sIoBPL4mgSCIDlMSPY9oB246gk00GD0Mg79PM=w480-h960-rw) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(8) .favorite-div div {
+        background: url(https://az.trend.az/media/2024/08/09/trend_bakikart.jpg) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(9) .favorite-div div {
+        background: url(https://media.licdn.com/dms/image/v2/D560BAQFr81DnEkRYJw/company-logo_200_200/company-logo_200_200/0/1689241041418/mislicom_logo?e=2147483647&v=beta&t=FLfpnFV7MsmOQMwG-34nQ2ud-gWpIqVvLTAfNDpovoo) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite a:nth-child(10) .favorite-div div {
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4txe37hNjQGOyNZwM46u7ITWzZXmeIbDJUQ&s) center/cover no-repeat;
+    }
+
+    .main7 .main7-top .favorite .favorite-div div .main7 .main7-top .favorite .favorite-div span {
+        color: white;
+    }
+
+    .main7-bottom {
+        background: black;
+        padding: 25px 15px 80px 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .main7-bottom a {
+        display: flex;
+        justify-content: center;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+
+    .main7-bottom a .option {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 85%;
+        height: 200px;
+        flex-direction: column;
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px rgb(183 191 207 / 70%), 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .main7-bottom .option i:nth-child(2) {
+        color: white;
+        font-size: 1.3rem;
+        rotate: 90deg;
+        display: none;
+    }
+
+    .main7-bottom .option .i-span {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .main7-bottom .option .i-span img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .main7-bottom .option .i-span span {
+        color: white;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+    }
+
+    .main7-bottom .option .i-span i {
+        color: white;
+        border: 1px solid skyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    /* APP 7 MINI */
+
+    .main7-mini {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: wheat;
+
+    }
+
+    .main7-mini .main7-mini-top {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .main7-mini .main7-mini-top .send-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70px;
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .main7-mini .main7-mini-top .send-card input {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+        padding: 0px 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .main7-mini .main7-mini-top .send-card span {
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .card-div {
+        background: white;
+        width: 100%;
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .card-div .span {
+        font-size: 1.2rem;
+        font-family: sans-serif;
+
+    }
+
+    .main7-card {
+        background: #e42e2e;
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+    .main7-card .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main7-card .logo {
+        font-family: sans-serif;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .item-card {
+        background: white;
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: 1px solid black;
+    }
+
+
+    .item-card .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .texts span {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: end;
+    }
+
+    .texts2 span {
+        color: rgb(197, 64, 64);
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: end;
+    }
+
+    .texts,
+    .texts2 p {
+        color: darkgray;
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+
+    .item-card .logo {
+        font-family: sans-serif;
+        color: #e42e2e;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .cartlar {
+        display: none;
+        background: white;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main7-mini-bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .active-bottom {
+        padding: 25px 15px 80px 15px;
+    }
+
+    .send-amount {
+        display: flex;
+        width: 100%;
+        height: 50px;
+    }
+
+    .send-amount span {
+        margin-left: -30px;
+        margin-top: 13px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .send-amount input {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+        padding: 0px 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .main7-mini-bottom .money-plus {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .main7-mini-bottom .money-plus .money {
+        background-color: white;
+        width: 30%;
+        padding: 15px 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main7-mini-bottom .money-plus .money p {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .main7-mini-bottom .send-money {
+        width: 100%;
+        background: #e64040;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .2s;
+        font-family: sans-serif;
+    }
+
+    /* MOBIL RABITE */
+
+
+    .linkler-main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(#230080, #282626);
+    }
+
+    /* BAKCELL */
+
+    .bakcell {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: wheat;
+        padding: 150px 20px;
+    }
+
+    .bakcell .head {
+        justify-content: center;
+    }
+
+    .bakcell .head a img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50px;
+        margin-top: -70px;
+    }
+
+    .bakcell .bakcell-top .send-card input {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+        padding: 0px 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .bakcell .bakcell-top .send-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70px;
+        margin-top: 20px;
+    }
+
+    .bakcell .bakcell-top {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .bakcell-bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .bakcell-bottom .send-money {
+        width: 100%;
+        background: #e64040;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .2s;
+        font-family: sans-serif;
+    }
+
+    .bakcell-bottom .money-plus {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .bakcell-bottom .money-plus .money {
+        background-color: white;
+        width: 30%;
+        padding: 15px 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bakcell-bottom .money-plus .money p {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .bakcell .bakcell-top .send-card input {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+        padding: 0px 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .bakcell .bakcell-top .send-card span {
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .bakcell .bakcell-bottom span {
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+
+
+
+}
+
+
+@media(max-width:576px) {
+
+    .card-main .card {
+        width: 60%;
+        height: 100%;
+    }
+
+    .main6-top .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main6-bottom form .inputs {
+        justify-content: space-evenly;
+    }
+
+    .main6-bottom {
+        padding: 5px 5px;
+    }
+
+    .main6-bottom form .inputs {
+        display: flex;
+        gap: 10px;
+    }
+
+    .main7-bottom a .option .i-span span {
+        font-size: 1.3rem;
+    }
+
+    .main7-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main7-bottom .option .i-span {
+        flex-direction: row;
+    }
+
+    .main7-bottom a .option {
+        height: 85px;
+        flex-direction: row;
+        width: 95%;
+        padding: 0px 10px;
+    }
+
+    .main7-bottom a .option .i-span img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .main7-bottom a .option i:nth-child(2) {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .main5-account .inputs .name-input {
+        width: 75%;
+    }
+}
+
+
+
+@media(max-width:400px) {
+
+    .card-main .card {
+        width: 80%;
+        background: rgb(55, 54, 54);
+        height: 90%;
+        border-radius: 7px;
+        padding: 11px 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-main .card {
+        width: 80%;
+        height: 90%;
+    }
+
+    .main6-top .card {
+        width: 100%;
+        background: rgb(55, 54, 54);
+        height: 70%;
+        padding: 17px 0;
+        border-radius: 16px;
+    }
+
+    .main6-bottom {
+        padding: 5px 5px;
+    }
+
+
+    .profile-img img {
+        width: 100%;
+        height: 24vh;
+    }
+
+    .main4-top {
+        padding: 5px 10px 20px 10px;
+    }
+
+
+    .crease .income-expenses .balance span {
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: white;
+    }
+
+    .main7-bottom a .option .i-span {
+        gap: 15px;
+    }
+
+    .main7-bottom a .option .i-span span {
+        font-size: 1.3rem;
+    }
+
+    .main7-bottom a .option i {
+        font-size: 1rem;
+    }
+
+    .main7-bottom a .option .i-span i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main7 .main7-top .favorite .favorite-div div {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main7-bottom a .option {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 65px;
+        padding: 0 10px;
+    }
+
+    .main7-bottom a .option .i-span img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main7-bottom a .option .i-span span {
+        font-size: 1rem;
+    }
+
+    .main7-bottom a .option i:nth-child(2) {
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .linkler-main a .option .i-span img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .main5-notification .notification .notification-mini {
+        padding: 25px 0px;
+    }
+
+    .main5-account .inputs .name-input {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:320px) {
+
+    .main7-bottom a .option {
+        padding: 0;
+    }
+
+    .main6-bottom form .input-div input {
+        width: 100%;
+    }
+
+    .main4-bottom .transactions-main .transactions-div {
+        gap: 10px;
+    }
+
+    .main4-top .crease {
+        gap: 5px;
+    }
+
+    .main5-notification .notification .notification-mini .message-div #p {
+        font-size: 0.9rem;
+    }
+
+    .main5-account .inputs .name-input {
+        width: 100%;
+    }
+
+    .main5-account .inputs .name-input input {
+        font-size: 1rem;
+    }
+
+}
