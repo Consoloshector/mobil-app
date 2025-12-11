@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main5-account">
+
+        <div class="head">
+            <a href="C:\Users\user\OneDrive\Desktop\mobil app\main5-notification.html"><i
+                    class="fa-solid fa-bell"></i></a> <a href=""><img
+                    src="https://assets.api.uizard.io/api/cdn/stream/f700ba42-5123-4ccb-8da7-13f35b1449f8.jpg"
+                    alt=""></a>
+        </div>
+
+        <div class="account-img">
+            <img src="https://assets.api.uizard.io/api/cdn/stream/f700ba42-5123-4ccb-8da7-13f35b1449f8.jpg" alt="">
+        </div>
+
+        <div class="inputs">
+            <div class="name-input">
+                <span>Ad</span>
+                <input id="ad" type="text">
+            </div>
+
+            <div class="name-input">
+                <span>Soyad</span>
+                <input id="soyad" type="text">
+            </div>
+
+            <div class="name-input">
+                <span>Mobil Nömrə</span>
+                <input id="nomre" type="number">
+            </div>
+
+            <div class="name-input">
+                <span>E-poçt</span>
+                <input id="email" type="email">
+            </div>
+        </div>
+
+        <button id="btn" type="submit">Yadda saxla</button>
+
+    </div>
+
+    <script>
+
+        const ad = document.getElementById('ad');
+        const soyad = document.getElementById('soyad');
+        const nomre = document.getElementById('nomre');
+        const email = document.getElementById('email');
+        const btn = document.getElementById('btn');
+
+
+        ad.value = localStorage.getItem('ad') || "";
+        soyad.value = localStorage.getItem('soyad') || "";
+        nomre.value = localStorage.getItem('nomre') || "";
+        email.value = localStorage.getItem('email') || "";
+
+        btn.addEventListener('click', function () {
+            localStorage.setItem('ad', ad.value);
+            localStorage.setItem('soyad', soyad.value);
+            localStorage.setItem('nomre', nomre.value);
+            localStorage.setItem('email', email.value);
+
+            alert('Məlumatlarınız uğurla yadda saxlanıldı')
+        })
+
+    </script>
+
+</body>
+
+</html>
