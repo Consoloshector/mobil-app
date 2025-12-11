@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main7-mini">
+
+        <div class="head">
+            <i class="fa-solid fa-bell"></i> <a href=""><img
+                    src="https://assets.api.uizard.io/api/cdn/stream/f700ba42-5123-4ccb-8da7-13f35b1449f8.jpg"
+                    alt=""></a>
+        </div>
+
+        <div class="main7-mini-top">
+
+            <div class="choose-card">
+
+                <div class="card-div">
+
+                    <span class="span">Ödəmək</span>
+                    <div class="main7card-cartlar">
+                        <div class="main7-card">
+                            <div class="logo">112₼</div>
+                            <div class="texts"><span>Təqaüd</span>
+                                <p>1213 4324 4535 5634</p>
+                            </div>
+                        </div>
+
+                        <div class="cartlar">
+                            <div class="item-card">
+                                <div class="logo">23₼</div>
+                                <div class="texts2"><span>Təqaüd</span>
+                                    <p>1213 4324 4535 5634</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="logo">313₼</div>
+                                <div class="texts2"><span>Təqaüd</span>
+                                    <p>1213 4324 4535 5634</p>
+                                </div>
+                            </div>
+                            <div class="item-card">
+                                <div class="logo">0₼</div>
+                                <div class="texts2"><span>Təqaüd</span>
+                                    <p>1213 4324 4535 5634</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="send-card">
+                <span>Medaxil olunan kart</span>
+                <input type="text" maxlength="16">
+            </div>
+
+        </div>
+
+        <div class="main7-mini-bottom">
+
+            <div class="send-amount">
+                <input type="text" id="amount" maxlength="5"><span> ₼</span>
+            </div>
+
+            <div class="money-plus">
+                <div class="money">
+                    <p>+5</p>
+                </div>
+                <div class="money">
+                    <p>+20</p>
+                </div>
+                <div class="money">
+                    <p>+50</p>
+                </div>
+            </div>
+
+            <div class="send-money">
+                Gonder
+            </div>
+
+        </div>
+
+        <footer class="footer-1">
+            <a style="color: black;" href="app4.html">
+                <div><i class="fa-solid fa-house"></i></div>
+            </a>
+            <a style="color: black;" href="app7.html">
+                <div class="cash"><i class="fa-solid fa-dollar-sign"></i></div>
+            </a>
+            <a style="color: black;" href="app5.html">
+                <div><i class="fa-solid fa-gear"></i></div>
+            </a>
+        </footer>
+
+    </div>
+
+
+    <script>
+
+        let mainCard = document.getElementsByClassName("main7-card")[0];
+        let cartlar = document.getElementsByClassName("cartlar")[0];
+        let main7minibottom = document.getElementsByClassName("main7-mini-bottom")[0];
+
+        mainCard.addEventListener("click", function () {
+            cartlar.classList.toggle("active");
+            main7minibottom.classList.toggle('active-bottom')
+        });
+
+
+        let items = document.getElementsByClassName("item-card");
+
+
+        let mainPrice = mainCard.getElementsByClassName("logo")[0];
+        let mainTitle = mainCard.getElementsByTagName("span")[0];
+        let mainMoney = mainCard.getElementsByTagName("p")[0];
+
+        for (let i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function () {
+
+                let price = this.getElementsByClassName("logo")[0].innerText;
+                let title = this.getElementsByTagName("span")[0].innerText;
+                let money = this.getElementsByTagName("p")[0].innerText;
+
+                mainPrice.innerText = price;
+                mainTitle.innerText = title;
+                mainMoney.innerText = money;
+
+                cartlar.classList.remove("active");
+             
+            });
+        }
+
+
+        let amount = document.getElementById("amount");
+        let plusBtns = document.getElementsByClassName("money");
+
+        for (let i = 0; i < plusBtns.length; i++) {
+            plusBtns[i].addEventListener("click", function () {
+                let val = parseInt(this.innerText.replace("+", ""));
+                amount.value = (Number(amount.value) || 0) + val;
+            });
+        }
+
+        document.querySelector(".send-money").addEventListener("click", function () {
+            alert("Məbləğ göndərildi: " + (amount.value || 0) + " ₼");
+        }); 
+    </script>
+
+</body>
+
+</html>
